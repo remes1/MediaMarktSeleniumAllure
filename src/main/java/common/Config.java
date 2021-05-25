@@ -2,9 +2,6 @@ package common;
 
 public class Config {
 
-
-
-    public static final String BROWSER = "CHROME";
     /**
      * Clean browser cookie after each iteration
      */
