@@ -25,16 +25,18 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//div[@data-test='mms-search-srp-productlist-item']")
     private List<WebElement> productList;
 
-    public void enterTextInInputField(String searchItem) {
+    public HomePage enterTextInInputField(String searchItem) {
         typeText(searchInput, searchItem);
+        return this;
     }
 
     public String getTextFromHeaderElement() {
         return getTextFromElement(header);
     }
 
-    public void clickOnLoupe() {
+    public HomePage clickOnLoupe() {
         clickOnElement(lupeButton);
+        return this;
     }
 
     public boolean areElementsPresent() {
